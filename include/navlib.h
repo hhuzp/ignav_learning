@@ -1585,7 +1585,7 @@ typedef struct {        /* solution type */
     gtime_t time;       /* time (GPST) */
     double rr[9];       /* position/velocity/acceleration (m|m/s|m/s^2) */
                         /* {x,y,z,vx,vy,vz} or {e,n,u,ve,vn,vu} */
-    float  qr[6];       /* position variance/covariance (m^2) */
+    float  qr[6],pqr[6];/* position variance/covariance (m^2) */
                         /* {c_xx,c_yy,c_zz,c_xy,c_yz,c_zx} or */
                         /* {c_ee,c_nn,c_uu,c_en,c_nu,c_ue} */
     float  qv[6];       /* velocity variance/covariance (m^2/s^2) */
@@ -1596,7 +1596,7 @@ typedef struct {        /* solution type */
     double dtr[6];      /* receiver clock bias to time systems (s) */
     double dtrr;        /* receiver clock drift (m/s) about GPST */
     unsigned char type; /* type (0:xyz-ecef,1:enu-baseline) */
-    unsigned char stat; /* solution status (SOLQ_???) */
+    unsigned char stat,pstat; /* solution status (SOLQ_???) */
     unsigned char ns;   /* number of valid satellites */
     unsigned char ista; /* ins update status (INSS_???) */
     float age;          /* age of differential (s) */
@@ -1730,6 +1730,7 @@ typedef struct {        /* processing options type */
     int maxout;         /* obs outage count to reset bias */
     int minlock;        /* min lock count to fix ambiguity */
     int minfix;         /* min fix count to hold ambiguity */
+    int minfixwl;       /* min fix count to hold WL ambiguity */
     int armaxiter;      /* max iteration to resolve ambiguity */
     int ionoopt;        /* ionosphere option (IONOOPT_???) */
     int tropopt;        /* troposphere option (TROPOPT_???) */
@@ -1889,10 +1890,12 @@ typedef struct {        /* satellite status type */
     double resp[NFREQ]; /* residuals of pseudorange (m) */
     double resc[NFREQ]; /* residuals of carrier-phase (m) */
     unsigned char vsat[NFREQ]; /* valid satellite flag */
+    unsigned char vsatc[NFREQ];/* valid satellite flag for pseudorange */
     unsigned char snr [NFREQ]; /* signal strength (0.25 dBHz) */
     unsigned char fix [NFREQ]; /* ambiguity fix flag (1:fix,2:float,3:hold) */
     unsigned char slip[NFREQ]; /* cycle-slip flag */
     unsigned char half[NFREQ]; /* half-cycle valid flag */
+    unsigned char sfrq[NFREQ]; /* single-frq flag */
     int lock [NFREQ];   /* lock counter of phase */
     unsigned int index[NFREQ]; /* index of satellite in phase double difference residuals vector */
     unsigned int cind [NFREQ]; /* index of satellite in code double difference residuals vector */
@@ -1906,6 +1909,8 @@ typedef struct {        /* satellite status type */
     double  mw;         /* MW-LC (m) */
     double  phw;        /* phase windup (cycle) */
     gtime_t pt[2][NFREQ]; /* previous carrier-phase time */
+    double  sdi[NFREQ];   /* single-differenced pseudorange observable by INS */
+    double  sdg[NFREQ];   /* single-differenced pseudorange observable by GNSS */
     double  ph[2][NFREQ]; /* previous carrier-phase observable (cycle) */
 } ssat_t;
 
@@ -1920,23 +1925,23 @@ typedef struct {        /* ambiguity control type */
 
 typedef struct {        /* double-difference ambiguity type */
     gtime_t time;       /* observation time */
-    gtime_t pt;         /* precious epoch time */
     int sat1,sat2;      /* double-difference ambiguity satellite */
     int f;              /* frequency no. */
     int c;              /* count of fix */
     double ratio;       /* LAMBDA ratio */
-    double b;           /* ambiguity value */
-    double pb;          /* precious epoch ambiguity value */
+    double bias;        /* ambiguity value */
 } ddamb_t;
 
 typedef struct {        /* double-difference satellite */
     int sat1,sat2;      /* double difference satellite no. */
     int f;              /* frequency no. */
+    int flag;           
 } ddsat_t;
 
 typedef struct {
     int nb;             /* numbers of double-difference ambiguity */
     int nmax;           /* max numbers of double-difference ambiguity */
+    int inherit;        /* ambiguity inherit flag */
     ddamb_t *amb;       /* double difference ambiguity list */
 } amb_t;
 
@@ -1948,6 +1953,7 @@ typedef struct {        /* RTK control/result type */
     double *xa,*Pa;     /* fixed states and their covariance */
     int nx,na;          /* number of float states/fixed states */
     int nfix;           /* number of continuous fixes of ambiguity */
+    int nfixwl;         /* number of continuous fixes of WL ambiguity */
     int neb;            /* bytes in error message buffer */
     int ns;             /* number of double difference satellites */
     int refsat[NUMSYS][2*NFREQ]; /* reference satellite of double-difference residuals* (0:gps/qzs/sbs,1:glo,2:gal,3:bds) */
@@ -1958,6 +1964,7 @@ typedef struct {        /* RTK control/result type */
     ssat_t ssat[MAXSAT];         /* satellite status */
     insstate_t ins;              /* ins states */
     amb_t bias;                  /* double-difference ambiguity list */
+    amb_t wlbias;                /* WL double-difference ambiguity list */
     ddsat_t sat[MAXSAT];         /* double difference satellite list */
 } rtk_t;
 
@@ -2564,7 +2571,7 @@ EXPORT int tle_name_read(const char *file, tle_t *tle);
 EXPORT int tle_pos(gtime_t time, const char *name, const char *satno,
                    const char *desig, const tle_t *tle, const erp_t *erp,
                    double *rs);
-
+EXPORT double gdelaycorr(const int sys, const double *rr,const double *rs);
 /* receiver raw data functions -----------------------------------------------*/
 EXPORT unsigned int getbitu(const unsigned char *buff, int pos, int len);
 EXPORT int          getbits(const unsigned char *buff, int pos, int len);

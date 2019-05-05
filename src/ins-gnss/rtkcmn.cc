@@ -188,7 +188,7 @@ const prcopt_t prcopt_default={ /* defaults processing options */
     PMODE_KINEMA,0,2,SYS_GPS,   /* mode,soltype,nf,navsys */
     15.0*D2R,{{0,0}},           /* elmin,snrmask */
     0,1,1,1,                    /* sateph,modear,glomodear,bdsmodear */
-    5,0,1,1,                    /* maxout,minlock,minfix,armaxiter */
+    5,0,1,1,1,                  /* maxout,minlock,minfix,minfixwl,armaxiter */
     0,0,0,0,                    /* estion,esttrop,dynamics,tidecorr */
     1,0,0,0,0,                  /* niter,codesmooth,intpref,sbascorr,sbassatsel */
     0,0,                        /* rovpos,refpos */
@@ -1573,10 +1573,7 @@ extern int filter(double *x, double *P, const double *H, const double *v,
         for (j=0;j<k;j++) P_[i+j*k]=P[ix[i]+ix[j]*n];
         for (j=0;j<m;j++) H_[i+j*k]=H[ix[i]+j*n];
     }
-    trace(3,"P_(0)=\n"); tracemat(3,P_,k,k,12,5);
-
     info=filter_(x_,P_,H_,v,R,k,m,xp_,Pp_);
-    trace(3,"P_=(1)\n"); tracemat(3,Pp_,k,k,12,5);
 
     if (!info) for (i=0;i<k;i++) {
         x[ix[i]]=xp_[i];
@@ -4616,6 +4613,45 @@ extern int rtk_uncompress(const char *file, char *uncfile)
     }
     trace(3,"rtk_uncompress: stat=%d\n",stat);
     return stat;
+}
+/*---------------------------------------------------------------------------
+* Name        : gravitationalDelayCorrection
+* Description : Obtains the gravitational delay correction for the effect of
+*               general relativity (red shift) to the GPS signal
+* Parameters  :
+* Name                           |Da|Unit|Description
+* double  *rr                     I  m    Position of the receiver
+* double  *rs                     I  m    Position of the satellite
+* Returned value (double)         O  m    Gravitational delay correction
+*-----------------------------------------------------------------------------*/
+#define MU_GPS   3.9860050E14     /* gravitational constant       */
+#define MU_GLO   3.9860044E14     /* gravitational constant       */
+#define MU_GAL   3.986004418E14   /* earth gravitational constant */
+#define MU_CMP   3.986004418E14   /* earth gravitational constant */
+extern double gdelaycorr(const int sys, const double *rr,const double *rs)
+{
+    double	rm;
+    double	sm;
+    double	distance;
+    double  MU,delay;
+
+    rm=sqrt(rr[0]*rr[0]+rr[1]*rr[1]+rr[2]*rr[2]);
+    sm=sqrt(rs[0]*rs[0]+rs[1]*rs[1]+rs[2]*rs[2]);
+    distance=sqrt((rs[0]-rr[0])*(rs[0]-rr[0])+
+                  (rs[1]-rr[1])*(rs[1]-rr[1])+
+                  (rs[2]-rr[2])*(rs[2]-rr[2]));
+
+    switch (sys) {
+        case SYS_GPS: MU=MU_GPS; break;
+        case SYS_GLO: MU=MU_GLO; break;
+        case SYS_GAL: MU=MU_GAL; break;
+        case SYS_CMP: MU=MU_CMP; break;
+        default:
+            MU=MU_GPS;
+            break;
+    }
+    delay=2.0*MU/(CLIGHT*CLIGHT)*log((sm+rm+distance)/(sm+rm-distance));
+    return delay;
 }
 /* dummy application functions for shared library ----------------------------*/
 #ifdef WIN_DLL
