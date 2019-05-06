@@ -1,0 +1,2 @@
+/usr/bin/ar qc libone-point.a  CMakeFiles/one-point.dir/one-point.cpp.o CMakeFiles/one-point.dir/precomp.cpp.o CMakeFiles/one-point.dir/modelest.cpp.o
+/usr/bin/ranlib libone-point.a

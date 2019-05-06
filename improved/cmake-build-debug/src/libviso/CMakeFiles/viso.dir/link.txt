@@ -1,0 +1,2 @@
+/usr/bin/ar qc libviso.a  CMakeFiles/viso.dir/triangle.cc.o CMakeFiles/viso.dir/vo-filter.cc.o CMakeFiles/viso.dir/vo-matcher.cc.o CMakeFiles/viso.dir/vo-matrix.cc.o CMakeFiles/viso.dir/vo-mono.cc.o CMakeFiles/viso.dir/vo-stereo.cc.o CMakeFiles/viso.dir/vo.cc.o
+/usr/bin/ranlib libviso.a

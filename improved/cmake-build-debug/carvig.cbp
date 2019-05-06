@@ -1,0 +1,1012 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="carvig"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\usr\share\;CMake Files\..\..\..\..\..\..\usr\share\OpenCV\;CMake Files\cmake\;CMake Files\src\;CMake Files\src\relative-pose\;CMake Files\src\relative-pose\five-point-nister\;CMake Files\src\relative-pose\four-point-groebner\;CMake Files\src\relative-pose\one-point\;CMake Files\src\relative-pose\seven-eight-point\;CMake Files\src\libviso\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tc-postpos">
+				<Option output="/home/cc/workspace/repository/ignav_learning/improved/bin/tc-postpos" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cc/workspace/repository/ignav_learning/improved/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/include"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/src/libviso"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/python3.5m"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/Makefile&quot;  VERBOSE=1 tc-postpos"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tc-postpos/fast">
+				<Option output="/home/cc/workspace/repository/ignav_learning/improved/bin/tc-postpos" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cc/workspace/repository/ignav_learning/improved/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/include"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/src/libviso"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/python3.5m"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/Makefile&quot;  VERBOSE=1 tc-postpos/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="carvig">
+				<Option output="/home/cc/workspace/repository/ignav_learning/improved/lib/libcarvig.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/include"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/src/libviso"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/python3.5m"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/Makefile&quot;  VERBOSE=1 carvig"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="carvig/fast">
+				<Option output="/home/cc/workspace/repository/ignav_learning/improved/lib/libcarvig.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/include"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/src/libviso"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/python3.5m"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/Makefile&quot;  VERBOSE=1 carvig/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="carvignav">
+				<Option output="/home/cc/workspace/repository/ignav_learning/improved/bin/carvignav" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cc/workspace/repository/ignav_learning/improved/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/include"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/src/libviso"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/python3.5m"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/Makefile&quot;  VERBOSE=1 carvignav"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="carvignav/fast">
+				<Option output="/home/cc/workspace/repository/ignav_learning/improved/bin/carvignav" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cc/workspace/repository/ignav_learning/improved/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/include"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/src/libviso"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/python3.5m"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/Makefile&quot;  VERBOSE=1 carvignav/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="five-point-nister">
+				<Option output="/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/five-point-nister/libfive-point-nister.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/five-point-nister"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/include"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/src/libviso"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/python3.5m"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/five-point-nister/Makefile&quot;  VERBOSE=1 five-point-nister"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/five-point-nister/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/five-point-nister/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/five-point-nister/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="five-point-nister/fast">
+				<Option output="/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/five-point-nister/libfive-point-nister.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/five-point-nister"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/include"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/src/libviso"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/python3.5m"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/five-point-nister/Makefile&quot;  VERBOSE=1 five-point-nister/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/five-point-nister/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/five-point-nister/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/five-point-nister/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="four-point-groebner">
+				<Option output="/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/four-point-groebner/libfour-point-groebner.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/four-point-groebner"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/include"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/src/libviso"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/python3.5m"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/src/relative-pose/four-point-groebner/../eigen"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/four-point-groebner/Makefile&quot;  VERBOSE=1 four-point-groebner"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/four-point-groebner/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/four-point-groebner/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/four-point-groebner/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="four-point-groebner/fast">
+				<Option output="/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/four-point-groebner/libfour-point-groebner.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/four-point-groebner"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/include"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/src/libviso"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/python3.5m"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/src/relative-pose/four-point-groebner/../eigen"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/four-point-groebner/Makefile&quot;  VERBOSE=1 four-point-groebner/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/four-point-groebner/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/four-point-groebner/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/four-point-groebner/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="one-point">
+				<Option output="/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/one-point/libone-point.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/one-point"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/include"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/src/libviso"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/python3.5m"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/one-point/Makefile&quot;  VERBOSE=1 one-point"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/one-point/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/one-point/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/one-point/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="one-point/fast">
+				<Option output="/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/one-point/libone-point.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/one-point"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/include"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/src/libviso"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/python3.5m"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/one-point/Makefile&quot;  VERBOSE=1 one-point/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/one-point/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/one-point/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/one-point/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="seven-eight-point">
+				<Option output="/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/seven-eight-point/libseven-eight-point.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/seven-eight-point"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/include"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/src/libviso"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/python3.5m"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/seven-eight-point/Makefile&quot;  VERBOSE=1 seven-eight-point"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/seven-eight-point/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/seven-eight-point/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/seven-eight-point/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="seven-eight-point/fast">
+				<Option output="/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/seven-eight-point/libseven-eight-point.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/seven-eight-point"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/include"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/src/libviso"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/python3.5m"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/seven-eight-point/Makefile&quot;  VERBOSE=1 seven-eight-point/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/seven-eight-point/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/seven-eight-point/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/relative-pose/seven-eight-point/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="viso">
+				<Option output="/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/libviso/libviso.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/libviso"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/include"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/src/libviso"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/python3.5m"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/src/libviso/src/libvisio"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/libviso/Makefile&quot;  VERBOSE=1 viso"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/libviso/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/libviso/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/libviso/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="viso/fast">
+				<Option output="/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/libviso/libviso.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/libviso"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/include"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/src/libviso"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/python3.5m"/>
+					<Add directory="/home/cc/workspace/repository/ignav_learning/improved/src/libviso/src/libvisio"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/libviso/Makefile&quot;  VERBOSE=1 viso/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/libviso/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/libviso/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/cc/workspace/repository/ignav_learning/improved/cmake-build-debug/src/libviso/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/app/igvonav.cc">
+			<Option target="carvignav"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/app/tc-postpos.cc">
+			<Option target="tc-postpos"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ar.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/carvigsvr.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/convgpx.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/convkml.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/convrnx.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/datum.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ephemeris.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/geoid.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/geomag.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/gis.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/gms-matcher.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/gnss-simobs.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ins-align.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ins-back-mech.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ins-camera.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ins-doppler.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ins-dualant-calib.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ins-flow-track.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ins-geomag.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ins-gnss-fbsm.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ins-gnss-iekf.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ins-gnss-rb.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ins-gnss-rts.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ins-gnss-state.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ins-gnss-tc.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ins-gnss-vo-msckf.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ins-gnss-vo-postpos.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ins-gnss-vo-sim.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ins-gnss-vo.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ins-gnss.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ins-img-filter.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ins-init-rt.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ins-libfast.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ins-match.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ins-nhc.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ins-odo.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ins-pnp.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ins-pose.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ins-sim.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ins-static-detect.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ins-track-visualizer.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ins-track.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ins-vo-mono.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ins-vo-opencv-interface.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ins-vo-util.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ins-zaru.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ins-zvu.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ins.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ionex.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/kalibr-rosbag-creator.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/lambda.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/null.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/options.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/pntpos.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ppp.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ppp_ar.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/ppp_corr.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/preceph.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/qrdcmp.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/quaternion.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/qzslex.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv/binex.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv/cmr.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv/comnav.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv/crescent.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv/ground-truth.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv/gsof.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv/gw10.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv/igv-sim.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv/imu.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv/io_png.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv/io_png.h">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv/javad.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv/jpeg.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv/m39-mix.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv/novatel-oem6.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv/novatel.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv/nvs.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv/pgm.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv/rcvlex.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv/rinex-rt.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv/rt17.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv/septentrio.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv/serialisation.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv/serialisation.h">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv/skytraq.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv/ss2.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv/stim300.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv/switnav.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv/tersus.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcv/ublox.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rcvraw.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rinex.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rtcm.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rtcm2.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rtcm3.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rtcm3e.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rtkcmn.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/rtkpos.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/sbas.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/se3.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/so3.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/solution.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/sse2neon-binding.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/stream.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/streamsvr.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/svd.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/tcpostpos.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/tides.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/tle.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/triangle.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/viso.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/vo-stereo.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/ins-gnss/vt.cc">
+			<Option target="carvig"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/libviso/triangle.cc">
+			<Option target="viso"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/libviso/triangle.h">
+			<Option target="viso"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/libviso/vo-filter.cc">
+			<Option target="viso"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/libviso/vo-filter.h">
+			<Option target="viso"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/libviso/vo-matcher.cc">
+			<Option target="viso"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/libviso/vo-matcher.h">
+			<Option target="viso"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/libviso/vo-matrix.cc">
+			<Option target="viso"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/libviso/vo-matrix.h">
+			<Option target="viso"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/libviso/vo-mono.cc">
+			<Option target="viso"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/libviso/vo-mono.h">
+			<Option target="viso"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/libviso/vo-stereo.cc">
+			<Option target="viso"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/libviso/vo-stereo.h">
+			<Option target="viso"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/libviso/vo.cc">
+			<Option target="viso"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/libviso/vo.h">
+			<Option target="viso"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/relative-pose/five-point-nister/five-point.cpp">
+			<Option target="five-point-nister"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/relative-pose/five-point-nister/five-point.hpp">
+			<Option target="five-point-nister"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/relative-pose/five-point-nister/modelest.cpp">
+			<Option target="five-point-nister"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/relative-pose/five-point-nister/precomp.cpp">
+			<Option target="five-point-nister"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/relative-pose/five-point-nister/precomp.hpp">
+			<Option target="five-point-nister"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/relative-pose/four-point-groebner/four-point-groebner.cpp">
+			<Option target="four-point-groebner"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/relative-pose/four-point-groebner/four-point-groebner.hpp">
+			<Option target="four-point-groebner"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/relative-pose/four-point-groebner/modelest.cpp">
+			<Option target="four-point-groebner"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/relative-pose/four-point-groebner/precomp.cpp">
+			<Option target="four-point-groebner"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/relative-pose/four-point-groebner/precomp.hpp">
+			<Option target="four-point-groebner"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/relative-pose/one-point/modelest.cpp">
+			<Option target="one-point"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/relative-pose/one-point/one-point.cpp">
+			<Option target="one-point"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/relative-pose/one-point/one-point.hpp">
+			<Option target="one-point"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/relative-pose/one-point/precomp.cpp">
+			<Option target="one-point"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/relative-pose/one-point/precomp.hpp">
+			<Option target="one-point"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/relative-pose/seven-eight-point/modelest.cpp">
+			<Option target="seven-eight-point"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/relative-pose/seven-eight-point/precomp.cpp">
+			<Option target="seven-eight-point"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/relative-pose/seven-eight-point/precomp.hpp">
+			<Option target="seven-eight-point"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/relative-pose/seven-eight-point/seven-eight-point.cpp">
+			<Option target="seven-eight-point"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/relative-pose/seven-eight-point/seven-eight-point.hpp">
+			<Option target="seven-eight-point"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/../../../../../../usr/share/OpenCV/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/../../../../../../usr/share/OpenCV/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/../../../../../../usr/share/OpenCV/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/../../../../../../usr/share/OpenCV/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/cmake/FindEigen3.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/relative-pose/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\relative-pose\"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/relative-pose/five-point-nister/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\relative-pose\five-point-nister\"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/relative-pose/four-point-groebner/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\relative-pose\four-point-groebner\"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/relative-pose/one-point/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\relative-pose\one-point\"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/relative-pose/seven-eight-point/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\relative-pose\seven-eight-point\"/>
+		</Unit>
+		<Unit filename="/home/cc/workspace/repository/ignav_learning/improved/src/libviso/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\libviso\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

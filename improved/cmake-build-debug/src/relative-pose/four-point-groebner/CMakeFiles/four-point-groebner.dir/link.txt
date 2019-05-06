@@ -1,0 +1,2 @@
+/usr/bin/ar qc libfour-point-groebner.a  CMakeFiles/four-point-groebner.dir/four-point-groebner.cpp.o CMakeFiles/four-point-groebner.dir/modelest.cpp.o CMakeFiles/four-point-groebner.dir/precomp.cpp.o
+/usr/bin/ranlib libfour-point-groebner.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libseven-eight-point.a  CMakeFiles/seven-eight-point.dir/seven-eight-point.cpp.o CMakeFiles/seven-eight-point.dir/precomp.cpp.o CMakeFiles/seven-eight-point.dir/modelest.cpp.o
+/usr/bin/ranlib libseven-eight-point.a
